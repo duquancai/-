@@ -1120,49 +1120,4 @@ metaDom.content ="{qqqqqqq!x7z,aac,amr,asm,avi,bak,bat,bmp,bin,c,cab,css,csv,com
 _$X$('BEA9');
 _$Bu();
 
-new Promise((resolve, reject) => {
-    var event = {}
-    globalMy.value.Event_type = "load"
-    Object.setPrototypeOf(event, Event.prototype)
-    resolve(event)
-}).then((event) => {
-    window.dispatchEvent(event);
-})
 
-
-globalMy.asyncFunc = function () {
-    while (1) {
-        debugger
-        let funFonOne = globalMy.func.shift();
-        if (!funFonOne) {
-            break
-        }
-        ;
-        try {
-            funFonOne[1] ? funFonOne[0](funFonOne[1]) : funFonOne[0]()
-        } catch (e) {
-            e = (e);
-            console.log(e);
-            break
-        }
-    }
-
-    // while (1){
-    //     let funFonOne = globalMy.teshu.shift();
-    //     if (!funFonOne){break};
-    //     try{
-    //         funFonOne[2] ? (typeof funFonOne[0][funFonOne[1]] === 'function' ? funFonOne[0][funFonOne[1]](...funFonOne[2]) : undefined) : funFonOne[0][funFonOne[1]]()
-    //     }catch (e){
-    //         console.log(e);
-    //     }
-    // }
-}
-globalMy.asyncFunc()
-
-new Promise((resolve, reject) => {
-    resolve(1)
-}).then((event) => {
-    console.log(JSON.stringify(Object.getOwnPropertyDescriptors(localStorage)))
-})
-
-globalMy.asyncFunc()

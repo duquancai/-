@@ -89,12 +89,12 @@ code += fs.readFileSync("./env/sessionStorage.js")+'\r\n'
 
 code += fs.readFileSync("./env/init_env.js")+'\r\n'
 
-// let workCode = fs.readFileSync("./test/test.js")+'\r\n'
+let workCode = fs.readFileSync("./test/test.js")+'\r\n'
 // let workCode = fs.readFileSync("./test/work.js")+'\r\n'
-let workCode = fs.readFileSync("./test/doubleHtml.js")+'\r\n'
+// let workCode = fs.readFileSync("./test/doubleHtml.js")+'\r\n'
 let  cleanFunccode = '';
 cleanFunccode = fs.readFileSync("./tool/cleanFunc.js")+'\r\n'
 
 
-// vm.run(new VMScript("debugger;\r\n" + code + "debugger;\r\n" + workCode + cleanFunccode + "\r\ndebugger;\r\n", "./zcj.js"));
-vm.run(new VMScript("debugger;\r\n"  +  workCode +"debugger;\r\n", "./zcj.js"));
+vm.run(new VMScript("debugger;\r\n" + code + "debugger;\r\n" + workCode + cleanFunccode + "\r\ndebugger;\r\n", "./zcj.js"));
+// vm.run(new VMScript("debugger;\r\n"  +  workCode +"debugger;\r\n", "./zcj.js"));

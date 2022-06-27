@@ -7,8 +7,8 @@
 // sessionStorage = globalMy.proxy(sessionStorage,"sessionStorage");
 
 
-localStorage = globalMy.proxy(localStorage);
-navigator =globalMy.proxy(navigator,"navigator");
-window = globalMy.proxy(window,"window");
-location = globalMy.proxy(location,"location");
-document = globalMy.proxy(document,"document");
+// localStorage = globalMy.proxy(localStorage);
+// navigator =globalMy.proxy(navigator,"navigator");
+// window = globalMy.proxy(window,"window");
+// location = globalMy.proxy(location,"location");
+// document = globalMy.proxy(document,"document");
