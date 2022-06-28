@@ -7,7 +7,7 @@
 3.沙箱主要用途是为了做调试用的，来检测rs5运行JS过程用到的环境。
 
 4.沙箱默认关闭代理，代理window等属性时，会导致window instanceof Window，location === document.location
-这样的判断为false，关闭代理则不会。
+这样的判断为false，关闭代理则不会。目前开启会有bug，会导致找不到节点，还在构思···
 
 5.目前只简单的完成了document.createElement的部分,基本可以使用
 document.getElementByTagName以及document.getElementById来
