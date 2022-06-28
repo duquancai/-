@@ -20,8 +20,8 @@ globalMy.element.documentType = {}
 globalMy.value.documentType ={}
 globalMy.node.documentType ={}
 globalMy.node.documentType.childNodes = []
-globalMy.element.documentType.nodeType = 10
-globalMy.element.documentType.nodeName = 'html'
+globalMy.value.documentType.nodeType = 10
+globalMy.value.documentType.nodeName = 'html'
 Object.setPrototypeOf(globalMy.element.documentType,DocumentType.prototype)
 Object.setPrototypeOf(globalMy.node.documentType.childNodes,NodeList.prototype)
 Object.setPrototypeOf(globalMy.element.documentType,DocumentType.prototype)
